@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.InteropServices.ComTypes;
 
 namespace LuaMinifier.Models
 {
@@ -26,6 +25,8 @@ namespace LuaMinifier.Models
 				Depth = CalculateDepth();
 			}
 		}
+
+		public ICollection<LuaFunction> ChildFunctions { get; set; } = new List<LuaFunction>();
 
 		public int Depth { get; private set; } = 0;
 

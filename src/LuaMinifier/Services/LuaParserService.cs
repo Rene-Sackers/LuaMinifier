@@ -16,7 +16,7 @@ namespace LuaMinifier.Services
 		{
 			return new LuaDocument
 			{
-				GlobalFunctions = _globalFunctionParser.ParseGlobalFunctions(lua).ToList()
+				GlobalFunctions = _globalFunctionParser.ParseFunctions(lua).ToList()
 			};
 		}
 	}
